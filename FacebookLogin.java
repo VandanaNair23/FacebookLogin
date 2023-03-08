@@ -18,7 +18,7 @@ public class FacebookLogin {
 		driver.findElement(By.xpath("//a[text()='Create new account']")).click();
 		driver.findElement(By.name("firstname")).sendKeys("Vandana");
 		driver.findElement(By.name("lastname")).sendKeys("Nair");
-		driver.findElement(By.name("lastname")).sendKeys("9460123881");
+		driver.findElement(By.name("reg_email__")).sendKeys("9460123881");
 		driver.findElement(By.id("password_step_input")).sendKeys("12342");
 		
 		WebElement source1 = driver.findElement(By.id("day"));
@@ -34,6 +34,7 @@ public class FacebookLogin {
 		drop3.selectByValue("1997");
 		
 		driver.findElement(By.xpath("//label[text()='Female']")).click();
+		
 		
 		
 		
